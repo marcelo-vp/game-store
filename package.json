@@ -7,10 +7,16 @@
         "url": "https://github.com/marcelo-vp/game-store"
     },
     "license": "AFL-3.0",
-    "scripts": {},
+    "scripts": {
+        "dev": "webpack --mode development",
+        "build": "webpack --mode production"
+    },
     "dependencies": {
         "react": "^16.2.0",
         "react-dom": "^16.2.0"
     },
-    "devDependencies": {}
+    "devDependencies": {
+        "webpack": "^4.1.1",
+        "webpack-cli": "^2.0.12"
+    }
 }

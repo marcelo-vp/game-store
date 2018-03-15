@@ -1,3 +1,3 @@
 ## Labs React Tutorial
 
-- Copyright: Rafael Madureira (Tech Lead:)
+- Copyright: Rafael Madureira - Tech Lead :)
