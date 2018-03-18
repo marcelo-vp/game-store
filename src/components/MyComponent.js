@@ -1,6 +1,6 @@
-const React = require('react');
+import React from 'react';
 
-const MyComponent = function() {
+const MyComponent = () => {
     return (
         <div>
             <h1>Hello World</h1>
@@ -11,4 +11,4 @@ const MyComponent = function() {
     );
 };
 
-module.exports = MyComponent;
+export default MyComponent;

@@ -1,6 +1,6 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
-const MyComponent = require('./components/MyComponent');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import MyComponent from './components/MyComponent';
 
 ReactDOM.render(
     <MyComponent/>,

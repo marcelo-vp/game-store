@@ -355,7 +355,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\nvar MyComponent = __webpack_require__(/*! ./components/MyComponent */ \"./src/components/MyComponent.js\");\n\nReactDOM.render(React.createElement(MyComponent, null), document.getElementById('root'));\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _MyComponent = __webpack_require__(/*! ./components/MyComponent */ \"./src/components/MyComponent.js\");\n\nvar _MyComponent2 = _interopRequireDefault(_MyComponent);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n_reactDom2.default.render(_react2.default.createElement(_MyComponent2.default, null), document.getElementById('root'));\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
@@ -367,7 +367,7 @@ eval("\n\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/in
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar MyComponent = function MyComponent() {\n    return React.createElement(\n        'div',\n        null,\n        React.createElement(\n            'h1',\n            null,\n            'Hello World'\n        ),\n        React.createElement(\n            'p',\n            null,\n            'This is my first example with ',\n            React.createElement(\n                'b',\n                null,\n                'React'\n            ),\n            ' and ',\n            React.createElement(\n                'b',\n                null,\n                'JSX'\n            )\n        )\n    );\n};\n\nmodule.exports = MyComponent;\n\n//# sourceURL=webpack:///./src/components/MyComponent.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar MyComponent = function MyComponent() {\n    return _react2.default.createElement(\n        'div',\n        null,\n        _react2.default.createElement(\n            'h1',\n            null,\n            'Hello World'\n        ),\n        _react2.default.createElement(\n            'p',\n            null,\n            'This is my first example with ',\n            _react2.default.createElement(\n                'b',\n                null,\n                'React'\n            ),\n            ' and ',\n            _react2.default.createElement(\n                'b',\n                null,\n                'JSX'\n            )\n        )\n    );\n};\n\nexports.default = MyComponent;\n\n//# sourceURL=webpack:///./src/components/MyComponent.js?");
 
 /***/ })
 
