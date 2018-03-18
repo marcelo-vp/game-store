@@ -78,7 +78,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nconst myComponent = React.createElement('div', null, 'Hello World');\n\nReactDOM.render(\n    myComponent,\n    document.getElementById('root')\n);\n\n\n//# sourceURL=webpack:///./app.js?");
+"use strict";
+eval("\n\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar myComponent = React.createElement(\n    'div',\n    null,\n    React.createElement(\n        'h1',\n        null,\n        'Hello World'\n    ),\n    React.createElement(\n        'p',\n        null,\n        'This is my first example with ',\n        React.createElement(\n            'b',\n            null,\n            'React'\n        ),\n        ' and ',\n        React.createElement(\n            'b',\n            null,\n            'JSX'\n        )\n    )\n);\n\nReactDOM.render(myComponent, document.getElementById('root'));\n\n//# sourceURL=webpack:///./app.js?");
 
 /***/ }),
 
