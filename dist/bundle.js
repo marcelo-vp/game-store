@@ -66,22 +66,10 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/app.js");
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./app.js":
-/*!****************!*\
-  !*** ./app.js ***!
-  \****************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar myComponent = React.createElement(\n    'div',\n    null,\n    React.createElement(\n        'h1',\n        null,\n        'Hello World'\n    ),\n    React.createElement(\n        'p',\n        null,\n        'This is my first example with ',\n        React.createElement(\n            'b',\n            null,\n            'React'\n        ),\n        ' and ',\n        React.createElement(\n            'b',\n            null,\n            'JSX'\n        )\n    )\n);\n\nReactDOM.render(myComponent, document.getElementById('root'));\n\n//# sourceURL=webpack:///./app.js?");
-
-/***/ }),
 
 /***/ "./node_modules/fbjs/lib/EventListener.js":
 /*!************************************************!*\
@@ -356,6 +344,30 @@ eval("/** @license React v16.2.0\n * react.development.js\n *\n * Copyright (c) 
 
 "use strict";
 eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs/react.development.js */ \"./node_modules/react/cjs/react.development.js\");\n}\n\n\n//# sourceURL=webpack:///./node_modules/react/index.js?");
+
+/***/ }),
+
+/***/ "./src/app.js":
+/*!********************!*\
+  !*** ./src/app.js ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\nvar MyComponent = __webpack_require__(/*! ./components/MyComponent */ \"./src/components/MyComponent.js\");\n\nReactDOM.render(React.createElement(MyComponent, null), document.getElementById('root'));\n\n//# sourceURL=webpack:///./src/app.js?");
+
+/***/ }),
+
+/***/ "./src/components/MyComponent.js":
+/*!***************************************!*\
+  !*** ./src/components/MyComponent.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar MyComponent = function MyComponent() {\n    return React.createElement(\n        'div',\n        null,\n        React.createElement(\n            'h1',\n            null,\n            'Hello World'\n        ),\n        React.createElement(\n            'p',\n            null,\n            'This is my first example with ',\n            React.createElement(\n                'b',\n                null,\n                'React'\n            ),\n            ' and ',\n            React.createElement(\n                'b',\n                null,\n                'JSX'\n            )\n        )\n    );\n};\n\nmodule.exports = MyComponent;\n\n//# sourceURL=webpack:///./src/components/MyComponent.js?");
 
 /***/ })
 

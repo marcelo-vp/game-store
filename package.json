@@ -9,9 +9,11 @@
     "license": "AFL-3.0",
     "scripts": {
         "dev": "webpack --mode development",
-        "build": "webpack --mode production"
+        "prod": "webpack --mode production",
+        "start": "node src/server.js"
     },
     "dependencies": {
+        "express": "^4.16.3",
         "react": "^16.2.0",
         "react-dom": "^16.2.0"
     },
@@ -20,6 +22,7 @@
         "babel-loader": "^7.1.4",
         "babel-preset-env": "^1.6.1",
         "babel-preset-react": "^6.24.1",
+        "copy-webpack-plugin": "^4.5.1",
         "webpack": "^4.1.1",
         "webpack-cli": "^2.0.12"
     }
