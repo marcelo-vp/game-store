@@ -9,6 +9,7 @@
     "license": "AFL-3.0",
     "scripts": {
         "dev": "webpack --mode development",
+        "watch": "webpack --watch --mode development",
         "prod": "webpack --mode production",
         "start": "node src/server.js"
     },

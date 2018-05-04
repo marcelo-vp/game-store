@@ -355,7 +355,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _MyComponent = __webpack_require__(/*! ./components/MyComponent */ \"./src/components/MyComponent.js\");\n\nvar _MyComponent2 = _interopRequireDefault(_MyComponent);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n_reactDom2.default.render(_react2.default.createElement(_MyComponent2.default, null), document.getElementById('root'));\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _MyComponent = __webpack_require__(/*! ./components/MyComponent */ \"./src/components/MyComponent.js\");\n\nvar _MyComponent2 = _interopRequireDefault(_MyComponent);\n\nvar _ShowName = __webpack_require__(/*! ./components/ShowName */ \"./src/components/ShowName.js\");\n\nvar _ShowName2 = _interopRequireDefault(_ShowName);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n_reactDom2.default.render(_react2.default.createElement(_ShowName2.default, null), document.getElementById('root'));\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
@@ -368,6 +368,18 @@ eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/i
 
 "use strict";
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar MyComponent = function MyComponent() {\n    return _react2.default.createElement(\n        'div',\n        null,\n        _react2.default.createElement(\n            'h1',\n            null,\n            'Hello World'\n        ),\n        _react2.default.createElement(\n            'p',\n            null,\n            'This is my first example with ',\n            _react2.default.createElement(\n                'b',\n                null,\n                'React'\n            ),\n            ' and ',\n            _react2.default.createElement(\n                'b',\n                null,\n                'JSX'\n            )\n        )\n    );\n};\n\nexports.default = MyComponent;\n\n//# sourceURL=webpack:///./src/components/MyComponent.js?");
+
+/***/ }),
+
+/***/ "./src/components/ShowName.js":
+/*!************************************!*\
+  !*** ./src/components/ShowName.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar formatName = function formatName(user) {\n    if (user) {\n        return _react2.default.createElement(\n            'h1',\n            null,\n            'Hello, ' + user.firstName + ' ' + user.lastName + '!'\n        );\n    }\n    return _react2.default.createElement(\n        'h1',\n        null,\n        'Hello, stranger.'\n    );\n};\n\nvar me = {\n    firstName: 'Marcelo',\n    lastName: 'Pinto'\n};\n\nvar ShowName = function ShowName() {\n    return _react2.default.createElement(\n        'div',\n        null,\n        formatName(me)\n    );\n};\n\nexports.default = ShowName;\n\n//# sourceURL=webpack:///./src/components/ShowName.js?");
 
 /***/ })
 
