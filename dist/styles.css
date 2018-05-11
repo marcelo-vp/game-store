@@ -1,0 +1,20 @@
+.mainDiv {
+    background-color: #fdfdfd;
+    padding: 20px 40px 80px;
+}
+.Comment {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+.Avatar {
+    width: 80%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.UserInfo-name {
+    margin-top: 6px;
+    color: blue;
+}

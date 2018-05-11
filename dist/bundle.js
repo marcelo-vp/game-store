@@ -66,7 +66,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -347,15 +347,51 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 
 /***/ }),
 
-/***/ "./src/app.js":
-/*!********************!*\
-  !*** ./src/app.js ***!
-  \********************/
+/***/ "./src/components/App.js":
+/*!*******************************!*\
+  !*** ./src/components/App.js ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _MyComponent = __webpack_require__(/*! ./components/MyComponent */ \"./src/components/MyComponent.js\");\n\nvar _MyComponent2 = _interopRequireDefault(_MyComponent);\n\nvar _ShowName = __webpack_require__(/*! ./components/ShowName */ \"./src/components/ShowName.js\");\n\nvar _ShowName2 = _interopRequireDefault(_ShowName);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n_reactDom2.default.render(_react2.default.createElement(_ShowName2.default, null), document.getElementById('root'));\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _MyComponent = __webpack_require__(/*! ./MyComponent */ \"./src/components/MyComponent.js\");\n\nvar _MyComponent2 = _interopRequireDefault(_MyComponent);\n\nvar _ShowName = __webpack_require__(/*! ./ShowName */ \"./src/components/ShowName.js\");\n\nvar _ShowName2 = _interopRequireDefault(_ShowName);\n\nvar _FuncComp = __webpack_require__(/*! ./FuncComp */ \"./src/components/FuncComp.js\");\n\nvar _FuncComp2 = _interopRequireDefault(_FuncComp);\n\nvar _Comment = __webpack_require__(/*! ./Comment */ \"./src/components/Comment.js\");\n\nvar _Comment2 = _interopRequireDefault(_Comment);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction App() {\n    return _react2.default.createElement(\n        'div',\n        { className: 'mainDiv' },\n        _react2.default.createElement(_FuncComp2.default, {\n            firstName: 'Marcelo',\n            lastName: 'Pinto'\n        }),\n        _react2.default.createElement(_Comment2.default, {\n            author: {\n                name: \"Marcelo Pinto\",\n                avatarUrl: \"./img/marcelo.png\"\n            },\n            text: 'This guy is just too inconvenient',\n            date: '05/10/2018'\n        })\n    );\n}\n\nexports.default = App;\n\n//# sourceURL=webpack:///./src/components/App.js?");
+
+/***/ }),
+
+/***/ "./src/components/Avatar.js":
+/*!**********************************!*\
+  !*** ./src/components/Avatar.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction Avatar(props) {\n    return _react2.default.createElement(\"img\", { className: \"Avatar\",\n        src: props.user.avatarUrl,\n        alt: props.user.name\n    });\n}\n\nexports.default = Avatar;\n\n//# sourceURL=webpack:///./src/components/Avatar.js?");
+
+/***/ }),
+
+/***/ "./src/components/Comment.js":
+/*!***********************************!*\
+  !*** ./src/components/Comment.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _UserInfo = __webpack_require__(/*! ./UserInfo.js */ \"./src/components/UserInfo.js\");\n\nvar _UserInfo2 = _interopRequireDefault(_UserInfo);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction Comment(props) {\n    return _react2.default.createElement(\n        'div',\n        { className: 'Comment' },\n        _react2.default.createElement(_UserInfo2.default, { user: props.author }),\n        _react2.default.createElement(\n            'div',\n            { className: 'Comment-text' },\n            props.text\n        )\n    );\n}\nexports.default = Comment;\n\n//# sourceURL=webpack:///./src/components/Comment.js?");
+
+/***/ }),
+
+/***/ "./src/components/FuncComp.js":
+/*!************************************!*\
+  !*** ./src/components/FuncComp.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction FuncComp(props) {\n    return _react2.default.createElement(\n        'div',\n        null,\n        _react2.default.createElement(\n            'h1',\n            null,\n            'Hello, Mr. ' + props.firstName + ' ' + props.lastName\n        )\n    );\n}\n\nexports.default = FuncComp;\n\n//# sourceURL=webpack:///./src/components/FuncComp.js?");
 
 /***/ }),
 
@@ -380,6 +416,30 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 
 "use strict";
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar formatName = function formatName(user) {\n    if (user) {\n        return _react2.default.createElement(\n            'h1',\n            null,\n            'Hello, ' + user.firstName + ' ' + user.lastName + '!'\n        );\n    }\n    return _react2.default.createElement(\n        'h1',\n        null,\n        'Hello, stranger.'\n    );\n};\n\nvar me = {\n    firstName: 'Marcelo',\n    lastName: 'Pinto'\n};\n\nvar ShowName = function ShowName() {\n    return _react2.default.createElement(\n        'div',\n        null,\n        formatName(me)\n    );\n};\n\nexports.default = ShowName;\n\n//# sourceURL=webpack:///./src/components/ShowName.js?");
+
+/***/ }),
+
+/***/ "./src/components/UserInfo.js":
+/*!************************************!*\
+  !*** ./src/components/UserInfo.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _Avatar = __webpack_require__(/*! ./Avatar */ \"./src/components/Avatar.js\");\n\nvar _Avatar2 = _interopRequireDefault(_Avatar);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction UserInfo(props) {\n    return _react2.default.createElement(\n        'div',\n        { className: 'UserInfo' },\n        _react2.default.createElement(_Avatar2.default, { user: props.user }),\n        _react2.default.createElement(\n            'div',\n            { className: 'UserInfo-name' },\n            props.user.name\n        )\n    );\n}\n\nexports.default = UserInfo;\n\n//# sourceURL=webpack:///./src/components/UserInfo.js?");
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _App = __webpack_require__(/*! ./components/App */ \"./src/components/App.js\");\n\nvar _App2 = _interopRequireDefault(_App);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n_reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('root'));\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
