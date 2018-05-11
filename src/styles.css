@@ -13,12 +13,12 @@
     max-width: 100%;
     display: block;
     margin: 0 auto;
+    border: 2px solid;
 }
 .UserInfo {
     margin-bottom: 6px;
 }
 .UserInfo-name {
     margin-top: 12px;
-    color: blue;
     font-size: 22px;
 }
