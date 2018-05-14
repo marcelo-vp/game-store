@@ -3,6 +3,7 @@ import MyComponent from './MyComponent';
 import ShowName from './ShowName';
 import FuncComp from './FuncComp';
 import Comment from './Comment';
+import Clock from './Clock';
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 text="This guy is just too inconvenient"
                 date="05/10/2018"
             />
+            <Clock/>
         </div>
     );
 }
