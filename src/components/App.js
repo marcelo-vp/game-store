@@ -4,6 +4,10 @@ import ShowName from './ShowName';
 import FuncComp from './FuncComp';
 import Comment from './Comment';
 import Clock from './Clock';
+import Car from './Car';
+import Person from './Person';
+
+const marcelo = new Person('marcelo', 35);
 
 function App() {
     return (
@@ -21,6 +25,9 @@ function App() {
                 date="05/10/2018"
             />
             <Clock/>
+            <div>{Car.start()}</div>
+            <div>{marcelo.walk()}</div>
+            <div>{marcelo.run()}</div>
         </div>
     );
 }

@@ -355,7 +355,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _MyComponent = __webpack_require__(/*! ./MyComponent */ \"./src/components/MyComponent.js\");\n\nvar _MyComponent2 = _interopRequireDefault(_MyComponent);\n\nvar _ShowName = __webpack_require__(/*! ./ShowName */ \"./src/components/ShowName.js\");\n\nvar _ShowName2 = _interopRequireDefault(_ShowName);\n\nvar _FuncComp = __webpack_require__(/*! ./FuncComp */ \"./src/components/FuncComp.js\");\n\nvar _FuncComp2 = _interopRequireDefault(_FuncComp);\n\nvar _Comment = __webpack_require__(/*! ./Comment */ \"./src/components/Comment.js\");\n\nvar _Comment2 = _interopRequireDefault(_Comment);\n\nvar _Clock = __webpack_require__(/*! ./Clock */ \"./src/components/Clock.js\");\n\nvar _Clock2 = _interopRequireDefault(_Clock);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction App() {\n    return _react2.default.createElement(\n        'div',\n        { className: 'mainDiv' },\n        _react2.default.createElement(_FuncComp2.default, {\n            firstName: 'Marcelo',\n            lastName: 'Pinto'\n        }),\n        _react2.default.createElement(_Comment2.default, {\n            author: {\n                name: \"Marcelo Pinto\",\n                avatarUrl: \"./img/marcelo.png\"\n            },\n            text: 'This guy is just too inconvenient',\n            date: '05/10/2018'\n        }),\n        _react2.default.createElement(_Clock2.default, null)\n    );\n}\n\nexports.default = App;\n\n//# sourceURL=webpack:///./src/components/App.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _MyComponent = __webpack_require__(/*! ./MyComponent */ \"./src/components/MyComponent.js\");\n\nvar _MyComponent2 = _interopRequireDefault(_MyComponent);\n\nvar _ShowName = __webpack_require__(/*! ./ShowName */ \"./src/components/ShowName.js\");\n\nvar _ShowName2 = _interopRequireDefault(_ShowName);\n\nvar _FuncComp = __webpack_require__(/*! ./FuncComp */ \"./src/components/FuncComp.js\");\n\nvar _FuncComp2 = _interopRequireDefault(_FuncComp);\n\nvar _Comment = __webpack_require__(/*! ./Comment */ \"./src/components/Comment.js\");\n\nvar _Comment2 = _interopRequireDefault(_Comment);\n\nvar _Clock = __webpack_require__(/*! ./Clock */ \"./src/components/Clock.js\");\n\nvar _Clock2 = _interopRequireDefault(_Clock);\n\nvar _Car = __webpack_require__(/*! ./Car */ \"./src/components/Car.js\");\n\nvar _Car2 = _interopRequireDefault(_Car);\n\nvar _Person = __webpack_require__(/*! ./Person */ \"./src/components/Person.js\");\n\nvar _Person2 = _interopRequireDefault(_Person);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar marcelo = new _Person2.default('marcelo', 35);\n\nfunction App() {\n    return _react2.default.createElement(\n        'div',\n        { className: 'mainDiv' },\n        _react2.default.createElement(_FuncComp2.default, {\n            firstName: 'Marcelo',\n            lastName: 'Pinto'\n        }),\n        _react2.default.createElement(_Comment2.default, {\n            author: {\n                name: \"Marcelo Pinto\",\n                avatarUrl: \"./img/marcelo.png\"\n            },\n            text: 'This guy is just too inconvenient',\n            date: '05/10/2018'\n        }),\n        _react2.default.createElement(_Clock2.default, null),\n        _react2.default.createElement(\n            'div',\n            null,\n            _Car2.default.start()\n        ),\n        _react2.default.createElement(\n            'div',\n            null,\n            marcelo.walk()\n        ),\n        _react2.default.createElement(\n            'div',\n            null,\n            marcelo.run()\n        )\n    );\n}\n\nexports.default = App;\n\n//# sourceURL=webpack:///./src/components/App.js?");
 
 /***/ }),
 
@@ -368,6 +368,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 
 "use strict";
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction Avatar(props) {\n    return _react2.default.createElement(\"img\", { className: \"Avatar\",\n        src: props.user.avatarUrl,\n        alt: props.user.name\n    });\n}\n\nexports.default = Avatar;\n\n//# sourceURL=webpack:///./src/components/Avatar.js?");
+
+/***/ }),
+
+/***/ "./src/components/Car.js":
+/*!*******************************!*\
+  !*** ./src/components/Car.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nvar Car = {\n    model: 'Polo',\n    year: 2018,\n    start: function start() {\n        return Car.model + ' ' + Car.year + ' is on!';\n    }\n};\n\nexports.default = Car;\n\n//# sourceURL=webpack:///./src/components/Car.js?");
 
 /***/ }),
 
@@ -416,6 +428,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 
 "use strict";
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar MyComponent = function MyComponent() {\n    return _react2.default.createElement(\n        'div',\n        null,\n        _react2.default.createElement(\n            'h1',\n            null,\n            'Hello World'\n        ),\n        _react2.default.createElement(\n            'p',\n            null,\n            'This is my first example with ',\n            _react2.default.createElement(\n                'b',\n                null,\n                'React'\n            ),\n            ' and ',\n            _react2.default.createElement(\n                'b',\n                null,\n                'JSX'\n            )\n        )\n    );\n};\n\nexports.default = MyComponent;\n\n//# sourceURL=webpack:///./src/components/MyComponent.js?");
+
+/***/ }),
+
+/***/ "./src/components/Person.js":
+/*!**********************************!*\
+  !*** ./src/components/Person.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nfunction Person(name, age) {\n    this.name = name;\n    this.age = age;\n    this.walk = function () {\n        return this.name + ' is walking.';\n    };\n}\nPerson.prototype.run = function () {\n    return this.name + ' is running at age ' + this.age;\n};\n\nexports.default = Person;\n\n//# sourceURL=webpack:///./src/components/Person.js?");
 
 /***/ }),
 
